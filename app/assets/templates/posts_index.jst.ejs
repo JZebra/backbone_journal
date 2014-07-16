@@ -1,0 +1,14 @@
+<h2>Index</h2>
+<ul>
+  <% posts.each(function (post) { %>
+    <li>
+      <a href="#/posts/<%= post.get('id') %>"> 
+        <%= post.get('title') %>
+      </a>
+    </li>
+    <button class='delete' data-id='<%= post.get('id') %>'>Remove Post</button>
+    <br>
+  <% }); %>
+</ul>
+
+<a href="#/posts/new">New Post</a>
