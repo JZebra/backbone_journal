@@ -32,7 +32,8 @@ Journal.Views.PostForm = Backbone.View.extend({
       },
       error: function () {
         console.log("WTF?");
-      }
+      },
+      wait: true
     });
   },
   

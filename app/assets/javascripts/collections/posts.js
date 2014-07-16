@@ -9,7 +9,7 @@ Journal.Collections.Posts = Backbone.Collection.extend({
     if (!(post = this.get(id))) {
       post = new Journal.Models.Post({ id: id });
       post.fetch({
-        success: function () {posts.add(post); }
+        success: function () { posts.add(post); }
       });
     }
     

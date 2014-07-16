@@ -1,5 +1,9 @@
-<h2 id="title">Post: <%= post.get('title')%></h2>
-<p id="body"><%= post.get('body')%></p>
+<h2 id="title">
+  Post: <%= post.get('title')%>
+</h2>
 
-<a href='#/'>Back</a>
+<p id="body">
+  <%= post.get('body')%>
+</p>
+
 <a href='#/posts/<%=post.get("id")%>/edit'>Edit</a>
